@@ -27,7 +27,7 @@ const Login = () => {
       return handleError("Fill all the fields")
     }
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = "mern-stack-signup-login-authenticat.vercel.app";
       const response = await fetch(url, {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
