@@ -11,6 +11,9 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get('/ping', (req, res) => {
+    res.send('PONG');
+});
 app.use("/auth", authRouter);
 app.use("/products", productRouter);
 
